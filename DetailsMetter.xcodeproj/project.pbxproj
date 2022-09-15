@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64B59B1928D214B200D41BD7 /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 64B59B1828D214B200D41BD7 /* success.mp3 */; };
+		64B59B1C28D2399A00D41BD7 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B59B1B28D2399A00D41BD7 /* HapticsManager.swift */; };
 		F300D73F28C7CEB600AE0E9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F300D73E28C7CEB600AE0E9B /* AppDelegate.swift */; };
 		F300D74128C7CEB600AE0E9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F300D74028C7CEB600AE0E9B /* SceneDelegate.swift */; };
 		F300D74328C7CEB600AE0E9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F300D74228C7CEB600AE0E9B /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64B59B1828D214B200D41BD7 /* success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = success.mp3; sourceTree = "<group>"; };
+		64B59B1B28D2399A00D41BD7 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		F300D73B28C7CEB600AE0E9B /* DetailsMetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetailsMetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F300D73E28C7CEB600AE0E9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F300D74028C7CEB600AE0E9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64B59B1A28D214BB00D41BD7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				64B59B1828D214B200D41BD7 /* success.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F300D73228C7CEB600AE0E9B = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +111,14 @@
 		F300D73D28C7CEB600AE0E9B /* DetailsMetter */ = {
 			isa = PBXGroup;
 			children = (
+				64B59B1A28D214BB00D41BD7 /* Resources */,
 				F300D77128C7CF8B00AE0E9B /* Controllers */,
 				F300D77028C7CF8200AE0E9B /* ViewModel */,
 				F300D76F28C7CF7900AE0E9B /* View */,
 				F300D76E28C7CF6D00AE0E9B /* Model */,
 				F300D73E28C7CEB600AE0E9B /* AppDelegate.swift */,
 				F300D74028C7CEB600AE0E9B /* SceneDelegate.swift */,
+				64B59B1B28D2399A00D41BD7 /* HapticsManager.swift */,
 				F300D74728C7CEB600AE0E9B /* Assets.xcassets */,
 				F300D74928C7CEB600AE0E9B /* LaunchScreen.storyboard */,
 				F300D74C28C7CEB600AE0E9B /* Info.plist */,
@@ -264,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F300D74B28C7CEB600AE0E9B /* LaunchScreen.storyboard in Resources */,
+				64B59B1928D214B200D41BD7 /* success.mp3 in Resources */,
 				F300D74828C7CEB600AE0E9B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +307,7 @@
 				F38D205D28CB657D0080ABEF /* BeachView.swift in Sources */,
 				F300D74328C7CEB600AE0E9B /* ViewController.swift in Sources */,
 				F300D73F28C7CEB600AE0E9B /* AppDelegate.swift in Sources */,
+				64B59B1C28D2399A00D41BD7 /* HapticsManager.swift in Sources */,
 				F300D74128C7CEB600AE0E9B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -444,9 +460,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -461,7 +478,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2P65JA735T;
+				DEVELOPMENT_TEAM = D77WMSS6V2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DetailsMetter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -477,7 +494,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -488,7 +505,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2P65JA735T;
+				DEVELOPMENT_TEAM = D77WMSS6V2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DetailsMetter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -504,7 +521,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
