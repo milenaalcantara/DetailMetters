@@ -12,7 +12,7 @@ class InfoViewController: UIViewController {
     var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "aqui será o conteúdo"
+        label.text = "🏝 Em breve, mais informações sobre o app."
         label.textColor = .darkGray
         
         return label
